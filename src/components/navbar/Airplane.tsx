@@ -11,7 +11,11 @@ const AirplaneContainer = styled('div')({
 export default function Airplane() {
     return (
         <AirplaneContainer>
-            <SvgIcon component={FlightIcon} sx={{ fontSize: '10vw'}}></SvgIcon>
+            <SvgIcon component={FlightIcon} sx={{ 
+                fontSize: '10vw',
+                color: '#d3d3d3'
+                }}>
+            </SvgIcon>
         </AirplaneContainer>
     )
 }
