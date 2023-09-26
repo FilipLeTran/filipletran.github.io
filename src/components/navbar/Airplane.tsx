@@ -4,16 +4,18 @@ import SvgIcon from '@mui/material/SvgIcon';
 
 
 const AirplaneContainer = styled('div')({
+    position: 'absolute',
+    left: '0vw',
+    top: '3vh',
     transform: 'rotate(180deg)'
 });
-
 
 export default function Airplane() {
     return (
         <AirplaneContainer>
             <SvgIcon component={FlightIcon} sx={{ 
                 fontSize: '10vw',
-                color: '#d3d3d3'
+                color: '#d3d3d3',
                 }}>
             </SvgIcon>
         </AirplaneContainer>

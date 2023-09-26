@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import Airplane from './Airplane';
 import { styled } from '@mui/system';
 
+
 const Path = styled('div')({
     position: 'absolute',
     top: 0,
-    left: '5vw',
-    backgroundColor: 'white',
+    left: '5.1%',
+    backgroundColor: '#d3d3d3',
     height: '100vh',
     width: 2
 });
