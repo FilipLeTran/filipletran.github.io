@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Airplane from './Airplane';
 import { styled } from '@mui/system';
+import RenderLandingPoints from './RenderLandingPoints';
 
 
 const Path = styled('div')({
@@ -12,13 +13,12 @@ const Path = styled('div')({
     width: 2
 });
 
-export default class Timeline extends Component {
-  render() {
+export default function Timeline() {
     return (
         <div>
             <Airplane></Airplane>
             <Path></Path>
+            <RenderLandingPoints/>
         </div>
     )
-  }
 }
