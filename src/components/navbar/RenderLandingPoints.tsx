@@ -12,8 +12,13 @@ const links: Array<string> = [
 const linksItems = links.map( link => <LandingPoint linkName={link}/>)
 
 const RenderedLandingPoints = styled('div')({
+    position: 'absolute',
+    top: 0,
+    left: '3.65vw',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+    height: '100vh'
 })
 
 

@@ -1,9 +1,5 @@
 import { styled } from '@mui/system';
 
-interface LandingText {
-    content: string;
-}
-
 const Text = styled('div')({
     position: 'relative',
     left: '5vw',
@@ -12,7 +8,7 @@ const Text = styled('div')({
 });
 
 
-export default function LandingText(props: LandingText){
+export default function LandingText(props: {content: string}){
     
     const { content } = props;
 
