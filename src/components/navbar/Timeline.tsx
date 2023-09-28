@@ -16,9 +16,9 @@ const Path = styled('div')({
 export default function Timeline() {
     return (
         <div>
-            <Airplane></Airplane>
             <Path></Path>
             <RenderLandingPoints/>
+            <Airplane></Airplane>
         </div>
     )
 }

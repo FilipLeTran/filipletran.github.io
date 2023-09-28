@@ -4,9 +4,9 @@ import SvgIcon from '@mui/material/SvgIcon';
 
 
 const AirplaneContainer = styled('div')({
-    position: 'relative',
+    position: 'absolute',
     left: '0vw',
-    top: '3vh',
+    top: '9vh',
     transform: 'rotate(180deg)'
 });
 
