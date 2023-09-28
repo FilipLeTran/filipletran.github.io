@@ -1,11 +1,20 @@
+import Typography from '@mui/material/Typography';
 import { styled } from '@mui/system';
 
-const Text = styled('div')({
-    position: 'relative',
-    left: '5vw',
+const Text = styled(Typography)({
+    position: 'absolute',
     top: '.5vw',
-    color: 'white'
+    width: '10vw',
+    color: 'white',
 });
+
+const ResponsiveFont = {
+    xs: '0.5rem',
+    sm: '.75rem',
+    md: '1rem',
+    lg: '1.25rem',
+    xl: '1.5rem'
+};
 
 
 export default function LandingText(props: {content: string}){
@@ -13,6 +22,6 @@ export default function LandingText(props: {content: string}){
     const { content } = props;
 
     return (
-        <Text>{content}</Text>
+        <Text fontSize={ResponsiveFont}>{content}</Text>
     )
 }

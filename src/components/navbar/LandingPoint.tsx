@@ -1,13 +1,13 @@
 import { styled } from '@mui/system';
 import LandingText from './LandingText';
+import Airplane from './Airplane';
 
 
 const Point = styled('button')({
     position: 'relative',
+    top: 0,
     backgroundColor: 'white',
-    borderRadius: '10000px',
-    width: '3vw',
-    height: '3vw'
+    textAlign: 'left'
 });
 
 export default function LandingPoint(props: { linkName: string; }) {
@@ -16,6 +16,7 @@ export default function LandingPoint(props: { linkName: string; }) {
 
     return (
         <Point className='reset-button'>
+            {/* <Airplane/> */}
             <LandingText content={linkName}/>
         </Point>
     );

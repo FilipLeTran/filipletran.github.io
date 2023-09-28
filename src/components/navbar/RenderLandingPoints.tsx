@@ -1,6 +1,7 @@
 import React from 'react'
 import LandingPoint from './LandingPoint';
 import { styled } from '@mui/system';
+import Airplane from './Airplane';
 
 const links: Array<string> = [
     'Home',
@@ -9,12 +10,16 @@ const links: Array<string> = [
     'Experience'
 ];
 
-const linksItems = links.map( link => <LandingPoint linkName={link}/>)
+const linksItems = links.map( link =>
+    <>
+        <LandingPoint linkName={link}/>
+    </> 
+);
 
 const RenderedLandingPoints = styled('div')({
-    position: 'absolute',
+    position: 'relative',
     top: 0,
-    left: '3.65vw',
+    left: '5vw',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
