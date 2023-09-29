@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/system';
 
 const Text = styled(Typography)({
-    position: 'absolute',
+    position: 'relative',
     top: '.5vw',
     width: '10vw',
     color: 'white',
